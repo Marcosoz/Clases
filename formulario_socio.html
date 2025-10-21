@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Registro de Socio</title>
+</head>
+
+<body>
+    <h2>Registrar nuevo socio</h2>
+    <form action="procesar_socios.php" method="POST">
+        <label>Cooperativa ID:</label><br>
+        <input type="number" name="cooperativa_id" required><br><br>
+
+        <label>Nombre completo:</label><br>
+        <input type="text" name="nombre_completo" required><br><br>
+
+        <label>Documento:</label><br>
+        <input type="text" name="cedula" required><br><br>
+
+        <label>Teléfono:</label><br>
+        <input type="text" name="telefono"><br><br>
+
+        <label>Email:</label><br>
+        <input type="email" name="email"><br><br>
+
+        <label>Fecha de ingreso:</label><br>
+        <input type="date" name="fecha_ingreso"><br><br>
+
+        <label>¿Es socio?:</label><br>
+        <select name="socio_si">
+            <option value="1">Sí</option>
+            <option value="0">No</option>
+        </select><br><br>
+
+        <label>Nivel de usuario:</label><br>
+        <input type="text" name="nivel_usuario"><br><br>
+
+        <label>Cupo:</label><br>
+        <input type="number" name="cupo"><br><br>
+
+        <input type="submit" value="Registrar">
+    </form>
+</body>
+
+</html>
